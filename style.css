@@ -10,7 +10,8 @@
     width:100%;
  
     height:100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Images/hangingbridge2.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    /*,url(Images/hangingbridge2.jpg)*/
     background-position: center;
     background-size: cover;
     padding-left: 8%;
@@ -133,4 +134,25 @@ h5{
 .card p{
     font-size: 8px;
     text-shadow: 0 0 15px #000;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+} 
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
 }
